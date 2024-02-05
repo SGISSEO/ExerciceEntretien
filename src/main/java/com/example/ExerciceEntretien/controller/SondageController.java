@@ -16,4 +16,9 @@ public class SondageController {
     public Sondage creerSondage(@RequestBody Sondage sondage) {
         return sondageRepository.save(sondage);
     }
+
+    @PostMapping
+    public Sondage repondreSondage(@RequestBody Sondage sondage) {
+        return sondageRepository.save(sondage);
+    }
 }
